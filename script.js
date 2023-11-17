@@ -1,40 +1,39 @@
 // Assignment code here
 function generatePassword() {
-
+  //create variables from users input
   var passwordLength = prompt("Choose Password Length (8 - 128 Characters");
   var includeLowercase = confirm("Include lowercase characters?");
   var includeUppercase = confirm("Include uppercase characters?");
   var includeNumber = confirm("Include Numbers?");
   var includeSpecialChar = confirm("Include Special Characters?");
 
-
+  //Ensure password length falls under the parameters
   var length = parseInt(passwordLength);
   if (isNaN(length) || length < 8 || length > 128) {
     alert('Invalid password length, please enter a number between 8 and 128')
     return "";
   }
   
-
+  //Ensure at least one parameter is selected
   if (!includeLowercase && !includeUppercase && !includeNumber && !includeSpecialChar) {
     alert("At least one character type must be selected.");
     return ""; 
   }
 
-
+  //adds selected character types to String list 
   var CharacterResult = "";
   if (includeLowercase) CharacterResult += 'abcdefghijklmnopqrstuvwxyz';
   if (includeUppercase) CharacterResult += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   if (includeNumber) CharacterResult += '0123456789';
   if (includeSpecialChar) CharacterResult += '!@#$%^&*()';
 
-
+  //runs loop by iterating the user length chosen and then assigning random chosen strings to the length of thr Character result 
   var randomPassword = "";
   for (var i = 0; i < length; i++) {
     var index = Math.floor(Math.random() * CharacterResult.length);
     randomPassword += CharacterResult[index]
   }
 
-  
   return randomPassword;
 }
 
