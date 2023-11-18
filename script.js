@@ -6,7 +6,7 @@ function generatePassword() {
     //Ensure password length falls under the parameters
     var length = parseInt(passwordLength);
     if (isNaN(length) || length < 8 || length > 128) {
-      alert('Invalid password length\nPlease enter a number between 8 and 128 and Try Again')
+      alert('Invalid Password Length\nPlease enter a number between 8 and 128\nTry Again')
       return "";
     }
 
