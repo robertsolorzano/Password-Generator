@@ -2,7 +2,7 @@
 Simple password generator in web browser
 
 **Generator Criteria:**
-- Lenght of password character (1-128)
+- Length of password character (1-128)
 - Uppercase characters
 - Lowercase characters
 - Numerical characters
