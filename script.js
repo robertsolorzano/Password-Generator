@@ -1,19 +1,21 @@
 // Assignment code here
 function generatePassword() {
   //create variables from users input
-  var passwordLength = prompt("Choose Password Length (8 - 128 Characters");
+  var passwordLength = prompt("Choose Password Length (8 - 128 Characters)");
+
+    //Ensure password length falls under the parameters
+    var length = parseInt(passwordLength);
+    if (isNaN(length) || length < 8 || length > 128) {
+      alert('Invalid password length\nPlease enter a number between 8 and 128 and Try Again')
+      return "";
+    }
+
   var includeLowercase = confirm("Include lowercase characters?");
   var includeUppercase = confirm("Include uppercase characters?");
   var includeNumber = confirm("Include Numbers?");
   var includeSpecialChar = confirm("Include Special Characters?");
 
-  //Ensure password length falls under the parameters
-  var length = parseInt(passwordLength);
-  if (isNaN(length) || length < 8 || length > 128) {
-    alert('Invalid password length, please enter a number between 8 and 128')
-    return "";
-  }
-  
+
   //Ensure at least one parameter is selected
   if (!includeLowercase && !includeUppercase && !includeNumber && !includeSpecialChar) {
     alert("At least one character type must be selected.");

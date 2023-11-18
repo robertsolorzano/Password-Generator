@@ -21,7 +21,9 @@ Link: [Password Generator](https://robertsolorzano.github.io/Password-Generator/
 
 ## Credits
 
-**Sources for Studying**
+**Sources for Studying and Initial Starter code**
+
+[Source Code](https://github.com/coding-boot-camp)
 
 [JavaScript Random](https://www.w3schools.com/JS/js_random.asp)
 
