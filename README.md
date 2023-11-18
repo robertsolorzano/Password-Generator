@@ -16,7 +16,7 @@ Link: [Password Generator](https://robertsolorzano.github.io/Password-Generator/
 
 ## Preview
 
-![Preview](assets/images/preview-crop.jpeg)
+![Preview](assets/images/preview.jpeg)
 
 
 ## Credits
