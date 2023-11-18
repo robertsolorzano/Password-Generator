@@ -16,7 +16,7 @@ body,
 }
 
 body {
-  background-color: #333;
+  background-color: #24292e;
 }
 
 .wrapper {
@@ -33,11 +33,11 @@ header {
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color: #fafbfc;
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: #333;
+  color: #24292e;
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
@@ -121,7 +121,8 @@ button[disabled] {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
+  border: 2px dashed #adb3b9;
+  background-color: #fafbfc;
   border-radius: 6px;
   resize: none;
   overflow: hidden;
