@@ -13,9 +13,9 @@ Link: [Password Generator](https://robertsolorzano.github.io/Password-Generator/
 
 ## Credits
 
-**Sources for Studying, CSS Styles, Style icons, and Svg content:**
+**Sources for Studying**
 
-[SVG Waves BG Generator](https://wickedbackgrounds.com/app)
+[]()
 
 ## License
 
