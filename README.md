@@ -14,7 +14,7 @@ Here's a glimpse of what this password generator offers:
 
 - Special Characters: For an extra layer of complexity and security, you have the option to include special characters in your generated password.
 
-Use this password generator for various purposes such as securing online accounts, emails, or protecting sensitive information. Feel free to share it with friends and colleagues to help enhance their online security with ease. 
+Use this password generator for various purposes such as securing online accounts, emails, or protecting sensitive information. Feel free to share it with friends and colleagues to help enhance their online security. 
 
 ## Link
 Link: [Password Generator](https://robertsolorzano.github.io/Password-Generator/)
