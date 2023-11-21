@@ -1,5 +1,7 @@
+/*Imported font family*/
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap');
 
+/*Chnaged font family*/
 *,
 *::before,
 *::after {
@@ -15,6 +17,7 @@ body,
   padding: 0;
 }
 
+/*Changed BG Color*/
 body {
   background-color: #24292e;
 }
@@ -74,6 +77,7 @@ header {
   clear: both;
 }
 
+/*Changed button color*/
 .btn {
   border: none;
   background-color: #2bda4e;
