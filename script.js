@@ -1,6 +1,6 @@
 // Assignment code here
 function generatePassword() {
-  //create variables from users input
+  //Create variables from users input
   var passwordLength = prompt("Choose Password Length (8 - 128 Characters)");
 
     //Ensure password length falls under the parameters
@@ -9,17 +9,17 @@ function generatePassword() {
       alert('Invalid Password Length\nPlease enter a number between 8 and 128\nTry Again')
       return "";
     }
+      //Continue with users prompts 
+    var includeLowercase = confirm("Include lowercase characters?");
+    var includeUppercase = confirm("Include uppercase characters?");
+    var includeNumber = confirm("Include Numbers?");
+    var includeSpecialChar = confirm("Include Special Characters?");
 
-  var includeLowercase = confirm("Include lowercase characters?");
-  var includeUppercase = confirm("Include uppercase characters?");
-  var includeNumber = confirm("Include Numbers?");
-  var includeSpecialChar = confirm("Include Special Characters?");
 
-
-  //Ensure at least one parameter is selected
-  if (!includeLowercase && !includeUppercase && !includeNumber && !includeSpecialChar) {
-    alert("At least one character type must be selected.");
-    return ""; 
+    //Ensure at least one character parameter is selected
+    if (!includeLowercase && !includeUppercase && !includeNumber && !includeSpecialChar) {
+      alert("At least one Character Type must be selected.");
+      return ""; 
   }
 
   //adds selected character types to String list 
@@ -29,7 +29,7 @@ function generatePassword() {
   if (includeNumber) CharacterResult += '0123456789';
   if (includeSpecialChar) CharacterResult += '!@#$%^&*()';
 
-  //runs loop by iterating the user length chosen and then assigning random chosen strings to the length of thr Character result 
+  //Iterates for the length specified by the user, randomly selecting characters from CharacterResult on each iteration to build the password
   var randomPassword = "";
   for (var i = 0; i < length; i++) {
     var index = Math.floor(Math.random() * CharacterResult.length);
@@ -38,7 +38,6 @@ function generatePassword() {
 
   return randomPassword;
 }
-
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
