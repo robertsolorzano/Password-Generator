@@ -9,7 +9,7 @@ function generatePassword() {
       alert('Invalid Password Length\nPlease enter a number between 8 and 128\nTry Again')
       return "";
     }
-      //Continue with users prompts 
+    //Continue with users prompts 
     var includeLowercase = confirm("Include lowercase characters?");
     var includeUppercase = confirm("Include uppercase characters?");
     var includeNumber = confirm("Include Numbers?");
